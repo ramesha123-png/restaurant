@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve a Table</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <header class="nav" style="background-color: bisque;">
+    <a href="index.html"><img src="cofee logo.png" alt="Cafe logo"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- keep your same <header class="nav"> ... </header> here -->
+
+  <section class="page-title" style="background-image: url('Background.png');">
+    <h1>Reserve a Table</h1>
+    <p>Tell us when you're coming and we'll save you a seat.</p>
+  </section>
+
+  <section class="reserve-section" style="background-color: bisque; text-color: black;"  >
+    <form id="reserveForm" class="form" novalidate>
+      <label >Name
+        <input type="text" id="name" placeholder="Your full name" style="background-color: antiquewhite;">
+      </label>
+
+      <label>Phone
+        <input type="tel" id="phone" placeholder="Your phone number" style="background-color: antiquewhite;">
+      </label>
+
+      <label>Date
+        <input type="date" id="date" style="background-color: antiquewhite;">
+      </label>
+
+      <label>Time
+        <input type="time" id="time" style="background-color: antiquewhite;">
+      </label>
+
+      <label>Number of guests
+        <input type="number" id="guests" min="1" max="12" value="2" style="background-color: antiquewhite;">
+      </label>
+
+      <button type="submit" class="btn">Confirm reservation</button>
+      <p id="formMsg" role="status"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

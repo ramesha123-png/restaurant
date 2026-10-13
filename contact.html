@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html"><img src="cofee logo.png" alt="Cafe logo" ></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-title" style="background-image: url('Background.png');">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you.</p>
+  </section>
+
+  <section class="contact-info" style="background-color: bisque; color: black;">
+    <div class="info-box">
+      <h3>Address</h3>
+      <p>158 Wijerama Rd<br>colombo 07</p>
+    </div>
+    <div class="info-box">
+      <h3>Phone</h3>
+      <p>+94741132338</p>
+    </div>
+    <div class="info-box">
+      <h3>Email</h3>
+      <p>hello@marvelcafe.com</p>
+    </div>
+    <div class="info-box">
+      <h3>Opening hours</h3>
+      <p>Mon to Fri: 8am to 9pm<br>Sat to Sun: 9am to 10pm</p>
+    </div>
+  </section>
+
+  <section class="map" style="background-color: bisque; color: black;">
+    <!-- Paste your own Google Maps embed link in src (see below) -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6102245389334!2d79.97430237477042!3d6.937100593062888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae257fd591420cb%3A0xf28cd276dd49ae58!2sAlbert%20Hotel%20Kaduwela!5e0!3m2!1sen!2slk!4v1790839240908!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </section>
+
+  <section class="reserve-section" style="background-color: bisque; color: black;">
+    <h2 class="section-heading">Send us a message</h2>
+    <form id="contactForm" class="form" novalidate>
+      <label>Name
+        <input type="text" id="cName" placeholder="Your name">
+      </label>
+      <label>Email
+        <input type="email" id="cEmail" placeholder="Your email">
+      </label>
+      <label>Message
+        <textarea id="cMessage" rows="5" placeholder="How can we help?"></textarea>
+      </label>
+      <button type="submit" class="btn">Send message</button>
+      <p id="contactMsg" role="status"></p>
+    </form>
+  </section>
